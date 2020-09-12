@@ -7,6 +7,6 @@ export const Grid = styled.div`
     grid-template-areas:
        "AS MH"
        "AS CT";
-    border:1px solid red;
+
     height:100vh;
 `;
