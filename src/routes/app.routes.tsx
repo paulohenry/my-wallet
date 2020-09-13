@@ -1,18 +1,17 @@
 import React from 'react'
 import {Switch, Route,BrowserRouter} from 'react-router-dom'
 import Dashboard from '../pages/dashboard'
-import Saida from '../pages/saida'
-import Entrada from '../pages/entrada'
+import List from '../pages/list'
+
 import Layout from '../components/layout'
 
-const AppRoutes:React.FC = ()=>{
+const AppRoutes  = ()=>{
   return(
     <BrowserRouter>
-      <Switch>
+      <Switch >
         <Layout>
           <Route exact path="/dashboard"  component={Dashboard}/>
-          <Route exact path="/entry"  component={Entrada}/>
-          <Route exact path="/exit"  component={Saida}/>
+          <Route exact path="/list/:type"  component={List}/>
         </Layout>
       </Switch>
     </BrowserRouter>

@@ -6,13 +6,15 @@ interface ISelectInputProps{
       value:string|number;
       label:string|number;
     }[]
+    defaultValue?:string;
 }
 
 
-const SelectInput:React.FC<ISelectInputProps> = ({options})=> {
+const SelectInput:React.FC<ISelectInputProps> = ({
+  options,defaultValue})=> {
   return (
     <Container>
-      <Select>
+      <Select defaultValue={defaultValue}>
        {options && options.map((o,i)=>{
          return(
          <option

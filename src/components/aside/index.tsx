@@ -32,13 +32,13 @@ const Aside:React.FC = ()=>
           </MenuItemLink>
 
           <MenuItemLink
-            to="/entry">
+            to="/list/entry">
               <MdArrowDownward/>
             Entrada
           </MenuItemLink>
 
           <MenuItemLink
-            to="/exit">
+            to="/list/exit">
               <MdArrowUpward/>
             Saída
           </MenuItemLink>
